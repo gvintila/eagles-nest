@@ -32,7 +32,7 @@
 
   /* Fonts */
   --font-primary: "Oswald Variable", sans-serif;
-  --font-secondary: "Roboto Flex Variable", sans-serif;
+  --font-secondary: "Roboto Variable", sans-serif;
 
   /* Drop Shadows */
   --drop-shadow-md: 0 0 12px rgb(0 0 0 / 0.05);
@@ -40,16 +40,19 @@
 
 @layer base {
   h1 {
-    @apply font-primary mx-auto min-[700px]:mx-32 mt-32 text-center text-white-1 font-bold text-7xl
+    @apply font-primary text-pretty mx-[10vw] mt-32 text-center text-white-1 font-bold text-5xl sm:text-7xl
   }
   h2 {
-    @apply font-primary mx-auto mt-16 text-center text-white-1 text-6xl
+    @apply font-primary mx-auto mt-8 sm:mt-16 text-center text-white-1 text-4xl sm:text-6xl
   }
   h3 {
-    @apply font-primary mx-auto mt-4 text-center text-white-1 text-4xl
+    @apply font-primary mx-auto mt-4 text-center text-white-1 text-3xl sm:text-4xl
   }
   p {
-    @apply font-secondary mx-auto mt-4 text-center text-white-2 text-base
+    @apply font-secondary mx-auto mt-4 text-center text-white-2 text-sm sm:text-base
+  }
+  small {
+    @apply block font-secondary mx-auto mt-4 text-center text-gray-300 text-sm sm:text-base
   }
 }
 

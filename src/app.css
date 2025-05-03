@@ -27,6 +27,7 @@
   --color-trackman-100: #ec691a;                          /* Default Trackman orange */
   --color-trackman-200: oklch(0.57 0.1811 45.52);         /* Hovered Trackman orange (darker) */
   --color-trackman-300: oklch(0.67 0.1811 45.52 / 30%);   /* Drop Shadow Trackman orange */
+  --color-trackman-400: oklch(0.77 0.1811 45.52);         /* Slightly ligher Trackman orange */
   --color-white-1: #f3f3f3;
   --color-white-2: #dcdcdc;
 
@@ -52,7 +53,7 @@
     @apply font-secondary mx-auto mt-4 text-center text-white-2 text-sm sm:text-base
   }
   small {
-    @apply block font-secondary mx-auto mt-4 text-center text-gray-300 text-sm sm:text-base
+    @apply font-secondary mx-auto mt-4 text-center text-gray-300 text-sm sm:text-base
   }
 }
 

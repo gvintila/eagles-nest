@@ -2,7 +2,7 @@
     import { page } from '$app/state'
     import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, Button, Input } from 'flowbite-svelte';
     import en_logo from '$lib/images/en_logo.png';
-    let activeUrl = $state(page.url.pathname);
+    let activeUrl = $derived(page.url.pathname);
     let activeClass = 'text-trackman-100';
     let nonActiveClass = 'dark:text-white-1 hover:text-trackman-100'
 </script>

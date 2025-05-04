@@ -1,3 +1,5 @@
+<!-- This component represents the top navigation bar that will be accessed from every page of the website -->
+
 <script>
     import { page } from '$app/state'
     import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, Button, Input } from 'flowbite-svelte';

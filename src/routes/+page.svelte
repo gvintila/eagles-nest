@@ -1,3 +1,4 @@
+<!-- Any images used in the body of the webpage will be imported in the script section below -->
 <script>
     import { Button } from 'flowbite-svelte';
     import EN_Card from '$lib/components/EN_Card.svelte';
@@ -10,9 +11,11 @@
 
 <!-- Hero Section -->
 
+<!-- This div displays the blurry gray dot in the background -->
 <div class="h-160 w-[40%] absolute left-1/2 transform -translate-x-1/2 -top-96 -z-1">
     <div class="size-full rounded-full bg-radial from-gray-500 to-transparent blur-3xl"></div>
 </div>
+
 <h1>PREMIUM 24/7 INDOOR GOLF</h1>
 <img src={powered_tm} class="mx-auto w-[16rem] sm:w-3xs" alt="Powered by TrackMan"/>
 <div class="flex justify-center gap-x-4 mt-2">

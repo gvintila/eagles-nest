@@ -1,3 +1,5 @@
+<!-- This component is used for displaying features regarding a section of the business with a compatible icon and short description -->
+
 <script>
     let { src, title, text } = $props();
     import { Card } from 'flowbite-svelte';

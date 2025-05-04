@@ -1,3 +1,5 @@
+<!-- This component represents the footer that will be at the bottom of every page of the website -->
+
 <script>
     import en_logo from '$lib/images/en_logo.png';
 </script>

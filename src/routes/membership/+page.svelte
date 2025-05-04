@@ -44,6 +44,9 @@
     </Card>
 </div>
 
+<p class="mt-8 px-8">*$5 must be paid for each guest except for the first guest with the Eagle membership</p>
+<p class="mt-8 px-8">All bookings are hourly and <b>require</b> reservation in advance!</p>
+
 <!-- Membership CTA -->
 
 <div class="flex justify-center gap-x-4 mt-16">

@@ -27,12 +27,11 @@
 <!-- Card Section -->
 
 <h2>What We Offer</h2>
-<div class="flex flex-wrap gap-x-16 justify-center sm:mt-8 mx-8 sm:mx-16 2xl:mx-64">
+<div class="flex flex-wrap gap-x-16 justify-center mt-8 sm:mt-16 mx-8 sm:mx-16 2xl:mx-64">
     <EN_Card src={card_golfclub} title="Trackman Simulators" 
     text="Experience the best indoor golfing technology with Trackman&#39s state-of-the-art golf simulators." />
     <EN_Card src={card_24_7} title="Convenient Access" 
-    text="Our facility offers 24/7 access with no staff, 
-    giving you the freedom to play on your schedule in total privacy and comfort." />
+    text="Our facility offers 24/7 access with no staff, giving you the freedom to play on your schedule in total privacy and comfort." />
     <EN_Card src={card_broom} title="Clean Comfort" 
     text="Enjoy a clean, tech-driven, and fully private space designed for a seamless, elevated golfing experience." />
 </div>

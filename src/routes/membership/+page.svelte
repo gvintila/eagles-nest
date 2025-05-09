@@ -11,8 +11,8 @@
 
 <!-- Membership Card Section -->
 
-<div class="flex flex-wrap gap-x-16 justify-center sm:mt-8 mx-8 sm:mx-16 2xl:mx-64">
-    <Card class="bg-site-fill mt-12 sm:mt-16 h-96 max-w-112 rounded-4xl border-none drop-shadow-md drop-shadow-trackman-300">
+<div class="flex flex-wrap gap-x-16 justify-center mt-16 sm:mt-24 mx-8 sm:mx-16 2xl:mx-64">
+    <Card class="bg-site-fill mt-12 sm:mt-16 pb-8 h-fit sm:h-96 max-w-112 rounded-4xl border-none drop-shadow-md drop-shadow-trackman-300">
         <h3 class="text-5xl sm:text-5xl">Birdie</h3>
         <div class="text-center mt-4">
             <h3 class="inline text-5xl sm:text-5xl text-trackman-100">$249</h3>
@@ -27,7 +27,7 @@
             <li>Bring up to <b>3</b> guests*</li>
         </ul>
     </Card>
-    <Card class="bg-site-fill mt-12 sm:mt-16 h-96 max-w-112 rounded-4xl border-none drop-shadow-md drop-shadow-trackman-300">
+    <Card class="bg-site-fill mt-12 sm:mt-16 pb-8 h-fit sm:h-96 max-w-112 rounded-4xl border-none drop-shadow-md drop-shadow-trackman-300">
         <h3 class="text-5xl sm:text-5xl">Eagle</h3>
         <div class="text-center mt-4">
             <h3 class="inline text-5xl sm:text-5xl text-trackman-100">$349</h3>

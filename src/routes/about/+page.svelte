@@ -1,25 +1,17 @@
 <script>
-    import EN_Card from '$lib/components/EN_Card.svelte';
     import ImgTextCombo from "$lib/components/ImgTextCombo.svelte";
 
-    // Other Images
-    import pincode_img from "$lib/images/facility/pincode.jpg";
-    import power_img from "$lib/images/facility/power.jpg";
-    import camera_img from "$lib/images/facility/camera.jpg";
+    // Images
+    import pdark_img from "$lib/images/about/player_dark.jpg";
+    import pswing_img from "$lib/images/about/player_swing.jpg";
 </script>
 
-<div class="h-160 w-[40%] absolute left-1/2 transform -translate-x-1/2 -top-96 -z-1">
-    <div class="size-full rounded-full bg-radial from-gray-500 to-transparent blur-3xl"></div>
-</div>
 <h2 class="mt-32 text-5xl sm:text-7xl">About Us</h2>
 
-<h2>Automation & Access</h2>
-<ImgTextCombo src={pincode_img} title="Secure PIN Codes" 
-text="For each booking, you will be provided a secure PIN code that you can use to check in 15 minutes before your alloted time." 
-rev=0 />
-<ImgTextCombo src={power_img} title="Automatic Power Down" 
-text="Once the booked session is over, all technological equipment will be automatically shut down." 
-rev=1 />
-<ImgTextCombo src={camera_img} title="Security Cameras" 
-text="Security cameras will be utilized to maintain security and logging entries for each booking member." 
-rev=0 />
+<div class="mt-16 sm:mt-24"></div>
+<ImgTextCombo src={pdark_img} title="What Makes Us Different" 
+text="Our indoor golf studio offers a fully automated, member-exclusive experience unlike anything else. Powered by industry-leading Trackman simulators, members enjoy 24/7 access to a private, high-end space tailored for convenience and performance. With no staff and seamless self-check-in, you're free to practice, play, and unwind on your schedule." 
+rev=0 ext="left" />
+<ImgTextCombo src={pswing_img} title="Our Vision" 
+text="We aim to redefine the way golfers train and play by delivering a consistent, premium experience every time. Through a fully automated, member-only model, we remove the friction of traditional facilities and focus on what matters most: quality, privacy, and performance. With 24/7 access to world-class Trackman technology in a clean, secure environment, our vision is to create a space where excellence is always within reach—anytime you choose to play." 
+rev=1 ext="left" />

@@ -4,9 +4,10 @@
 <!-- title - Title of text section  -->
 <!-- text - Paragraph of text section -->
 <!-- rev - indicates if image / text should be reversed (swapped) -->
+<!-- ext - extends class for paragraph text (used to change between text-center and text-left) -->
 
 <script>
-    let { src, title, text, rev = 0 } = $props();
+    let { src, title, text, rev = 0, ext="center" } = $props();
 </script>
   
 <!-- Non-reversed -->
@@ -15,7 +16,7 @@
         <!-- Text Section -->
         <div class="col-span-2 xl:col-span-1 px-[3vw] sm:w-lg xl:w-full">
             <h3>{title}</h3>
-            <p class="text-center">{text}</p>
+            <p class="text-{ext} mt-8">{text}</p>
         </div>
         <!-- Image Section -->
         <img class="col-span-2 xl:col-span-1 min-w-2xs w-[50vw] xl:w-[75%]" src={src} alt="{title} image" />
@@ -28,7 +29,7 @@
         <!-- Text Section -->
         <div class="row-1 xl:row-1 col-span-2 xl:col-span-1 px-[3vw] sm:w-lg xl:w-full">
             <h3>{title}</h3>
-            <p class="text-center">{text}</p>
+            <p class="text-{ext} mt-8">{text}</p>
         </div>
     </div> 
 {/if}

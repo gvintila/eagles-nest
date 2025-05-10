@@ -15,7 +15,7 @@
             <img src={en_logo} class="h-[48px] p-1" alt="Eagle's Nest" />
         </NavBrand>
         <div class="flex md:order-2">
-            <Button pill size="sm" class="text-xs sm:text-sm bg-trackman-100 hover:bg-trackman-200">Book Now</Button>
+            <Button pill size="sm" class="animate-button text-xs sm:text-sm bg-trackman-100">Book Now</Button>
             <NavHamburger class="hover:bg-site-fill"/>
         </div>
         <NavUl class="order-1 dark" classUl="bg-site-fill" {activeUrl} {activeClass} {nonActiveClass}>

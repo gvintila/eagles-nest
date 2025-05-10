@@ -1,3 +1,9 @@
+<svelte:head>
+    <title>How It Works | Eagle's Nest</title>
+    <meta tag="description"
+    content="Joining is simple: choose a membership, book through Trackman, get your access PIN, and enjoy 24/7 golf in a secure, staff-free private facility.">
+</svelte:head>
+
 <script>
     import ArrowDownOutline from 'flowbite-svelte-icons/ArrowDownOutline.svelte';
     import { Card } from 'flowbite-svelte';
@@ -9,10 +15,10 @@
     import card_golfclub from "$lib/images/howitworks/golf_club.png";
 </script>
 
-<h2 class="mt-32 text-5xl sm:text-7xl">How It Works</h2>
+<h2>How It Works</h2>
 
 <!-- Step-by-Step Breakdown -->
-<div class="grid grid-cols-1 columns-lg justify-items-center mx-8 sm:mx-auto mt-16 sm:mt-24 sm:w-lg">
+<div class="grid grid-cols-1 columns-lg justify-items-center mx-8 sm:mx-auto mt-24 sm:mt-32 sm:w-lg">
     <Card class="en-card pb-8 sm:min-w-md">
         <img src={card_membership} class="mx-auto mt-4 h-auto w-16 sm:w-24" alt="Card Icon" />
         <p>Choose a membership that fits your playing needs</p>

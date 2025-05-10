@@ -1,5 +1,12 @@
+<svelte:head>
+    <title>Facility | Eagle's Nest</title>
+    <meta tag="description"
+    content="Step inside a secure, private indoor golf facility with 24/7 member access—featuring Trackman simulators and premium technology for a refined experience.">
+</svelte:head>
+
 <script>
     import { Lightbox } from 'svelte-lightbox';
+    import Subheader from '$lib/components/Subheader.svelte';
     import EN_Card from '$lib/components/EN_Card.svelte';
     import ImgTextCombo from "$lib/components/ImgTextCombo.svelte";
 
@@ -18,10 +25,10 @@
     import camera_img from "$lib/images/facility/camera.jpg";
 </script>
 
-<h2 class="mt-32 text-5xl sm:text-7xl">Facility</h2>
+<h2>Facility</h2>
 
 <!-- Gallery Section -->
-<div class="flex flex-wrap gap-16 justify-center mt-16 sm:mt-24 mx-8 sm:mx-16 2xl:mx-64">
+<div class="flex flex-wrap gap-12 sm:gap-16 justify-center mt-24 sm:mt-32 mx-8 sm:mx-16 2xl:mx-64">
     <Lightbox>
         <img class="w-xs rounded-4xl drop-shadow-md drop-shadow-trackman-300" src={gal_stock_1} alt="Gallery thumbnail">
     </Lightbox>
@@ -43,8 +50,8 @@
 </div>
 
 <!-- Card Section -->
-<h2>Bay Features</h2>
-<div class="flex flex-wrap gap-x-16 justify-center mt-8 sm:mt-16 mx-8 sm:mx-16 2xl:mx-64">
+<Subheader title="Bay Features" />
+<div class="flex flex-wrap gap-x-16 justify-center mt-4 sm:mt-8 mx-8 sm:mx-16 2xl:mx-[15vw]">
     <EN_Card src={card_monitor} title="Trackman Launch Monitors" 
     text="Trackman launch monitors deliver precise, data-driven insights to help you analyze every shot and elevate your performance." />
     <EN_Card src={card_tv} title="Smart TVs" 
@@ -56,13 +63,15 @@
 </div>
 
 <!-- About Facility  -->
-<h2>Automation & Access</h2>
-<ImgTextCombo src={pincode_img} title="Secure PIN Codes" 
-text="For each booking, you will be provided a secure PIN code that you can use to check in 15 minutes before your alloted time." 
-rev=0 />
-<ImgTextCombo src={power_img} title="Automatic Power Down" 
-text="Once the booked session is over, all technological equipment will be automatically shut down." 
-rev=1 />
-<ImgTextCombo src={camera_img} title="Security Cameras" 
-text="Security cameras will be utilized to maintain security and logging entries for each booking member." 
-rev=0 />
+<Subheader title="Automation & Access" />
+<div class="mt-16 sm:mt-24">
+    <ImgTextCombo src={pincode_img} title="Secure PIN Codes" 
+    text="For each booking, you will be provided a secure PIN code that you can use to check in 15 minutes before your alloted time." 
+    rev=0 />
+    <ImgTextCombo src={power_img} title="Automatic Power Down" 
+    text="Once the booked session is over, all technological equipment will be automatically shut down." 
+    rev=1 />
+    <ImgTextCombo src={camera_img} title="Security Cameras" 
+    text="Security cameras will be utilized to maintain security and logging entries for each booking member." 
+    rev=0 />
+</div>

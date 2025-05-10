@@ -1,11 +1,17 @@
+<svelte:head>
+    <title>Membership | Eagle's Nest</title>
+    <meta tag="description"
+    content="Explore flexible membership plans with 24/7 access, guest privileges, and secure, private play—perfect for every type of golfer.">
+</svelte:head>
+
 <script>
     import { Button, Card } from 'flowbite-svelte';
 </script>
 
-<h2 class="mt-32 text-5xl sm:text-7xl">Membership</h2>
+<h2>Membership</h2>
 
 <!-- Membership Card Section -->
-<div class="flex flex-wrap gap-x-16 justify-center mt-4 sm:mt-8 mx-8 sm:mx-16 2xl:mx-auto">
+<div class="flex flex-wrap gap-x-16 justify-center mt-12 sm:mt-16 mx-8 sm:mx-16 2xl:mx-auto">
     <Card class="en-card mt-12 sm:mt-16 pb-8 h-fit sm:h-96 max-w-112">
         <h3 class="text-5xl sm:text-5xl">Birdie</h3>
         <div class="text-center mt-4">
@@ -38,7 +44,7 @@
     </Card>
 </div>
 
-<p class="mt-8 px-8">*$5 must be paid for each guest except for the first guest with the Eagle membership</p>
+<p class="mt-16 px-8">*$5 must be paid for each guest except for the first guest with the Eagle membership</p>
 <p class="mt-8 px-8">All bookings are hourly and <b>require</b> reservation in advance!</p>
 
 <!-- Membership CTA -->

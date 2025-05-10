@@ -9,7 +9,7 @@
     import { Card } from 'flowbite-svelte';
 </script>
   
-<Card class="bg-site-fill mt-12 sm:mt-16 h-76 sm:h-88 max-w-112 rounded-4xl border-none drop-shadow-md drop-shadow-trackman-300">
+<Card class="en-card mt-12 sm:mt-16 h-76 sm:h-88 max-w-112">
     <img src={src} class="mx-auto mt-4 h-auto w-24 sm:w-32" alt="Card Icon" />
     <h3>{title}</h3>
     <p>{text}</p>

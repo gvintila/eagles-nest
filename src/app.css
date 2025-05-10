@@ -40,13 +40,13 @@
 }
 
 @layer base {
-  h1 {
+  h1 {  /* Hero Header */
     @apply font-primary text-pretty mx-[10vw] mt-32 text-center text-white-1 font-bold text-5xl sm:text-7xl
   }
   h2 {
     @apply font-primary mx-auto mt-16 sm:mt-32 text-center text-white-1 text-4xl sm:text-6xl
   }
-  h3 {
+  h3 {  /* Card Header */
     @apply font-primary mx-auto mt-4 text-center text-white-1 text-3xl sm:text-4xl
   }
   h6 {  /* FAQ Accordion Header */
@@ -58,6 +58,19 @@
   small {
     @apply font-secondary mx-auto mt-4 text-center text-gray-300 text-sm sm:text-base
   }
+}
+
+.en-card {
+  @apply bg-site-fill rounded-4xl border-none drop-shadow-md drop-shadow-trackman-300
+}
+
+/* Transitions */
+.animate-button {
+  @apply transition duration-150 hover:bg-trackman-200
+}
+
+.svelte-lightbox-thumbnail {
+  @apply transition duration-150 hover:scale-110
 }
 
 @source "../node_modules/flowbite-svelte/dist";

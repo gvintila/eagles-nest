@@ -18,30 +18,27 @@
     import camera_img from "$lib/images/facility/camera.jpg";
 </script>
 
-<div class="h-160 w-[40%] absolute left-1/2 transform -translate-x-1/2 -top-96 -z-1">
-    <div class="size-full rounded-full bg-radial from-gray-500 to-transparent blur-3xl"></div>
-</div>
 <h2 class="mt-32 text-5xl sm:text-7xl">Facility</h2>
 
 <!-- Gallery Section -->
 <div class="flex flex-wrap gap-16 justify-center mt-16 sm:mt-24 mx-8 sm:mx-16 2xl:mx-64">
     <Lightbox>
-        <img class="w-xs rounded-4xl drop-shadow-md drop-shadow-trackman-300" src={gal_stock_1} alt="Stock">
+        <img class="w-xs rounded-4xl drop-shadow-md drop-shadow-trackman-300" src={gal_stock_1} alt="Gallery thumbnail">
     </Lightbox>
     <Lightbox>
-        <img class="w-xs rounded-4xl drop-shadow-md drop-shadow-trackman-300" src={gal_stock_1} alt="Stock">
+        <img class="w-xs rounded-4xl drop-shadow-md drop-shadow-trackman-300" src={gal_stock_1} alt="Gallery thumbnail">
     </Lightbox>
     <Lightbox>
-        <img class="w-xs rounded-4xl drop-shadow-md drop-shadow-trackman-300" src={pincode_img} alt="Stock">
+        <img class="w-xs rounded-4xl drop-shadow-md drop-shadow-trackman-300" src={pincode_img} alt="Gallery thumbnail">
     </Lightbox>
     <Lightbox>
-        <img class="w-xs rounded-4xl drop-shadow-md drop-shadow-trackman-300" src={gal_stock_1} alt="Stock">
+        <img class="w-xs rounded-4xl drop-shadow-md drop-shadow-trackman-300" src={gal_stock_1} alt="Gallery thumbnail">
     </Lightbox>
     <Lightbox>
-        <img class="w-xs rounded-4xl drop-shadow-md drop-shadow-trackman-300" src={pincode_img} alt="Stock">
+        <img class="w-xs rounded-4xl drop-shadow-md drop-shadow-trackman-300" src={pincode_img} alt="Gallery thumbnail">
     </Lightbox>
     <Lightbox>
-        <img class="w-xs rounded-4xl drop-shadow-md drop-shadow-trackman-300" src={gal_stock_1} alt="Stock">
+        <img class="w-xs rounded-4xl drop-shadow-md drop-shadow-trackman-300" src={gal_stock_1} alt="Gallery thumbnail">
     </Lightbox>
 </div>
 

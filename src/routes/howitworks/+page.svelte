@@ -1,25 +1,35 @@
 <script>
-    import EN_Card from '$lib/components/EN_Card.svelte';
-    import ImgTextCombo from "$lib/components/ImgTextCombo.svelte";
+    import ArrowDownOutline from 'flowbite-svelte-icons/ArrowDownOutline.svelte';
+    import { Card } from 'flowbite-svelte';
 
-    // Other Images
-    import pincode_img from "$lib/images/facility/pincode.jpg";
-    import power_img from "$lib/images/facility/power.jpg";
-    import camera_img from "$lib/images/facility/camera.jpg";
+    // Card Images
+    import card_membership from "$lib/images/howitworks/membership.png";
+    import card_booking from "$lib/images/howitworks/booking.png";
+    import card_password from "$lib/images/howitworks/password.png";
+    import card_golfclub from "$lib/images/howitworks/golf_club.png";
 </script>
 
-<div class="h-160 w-[40%] absolute left-1/2 transform -translate-x-1/2 -top-96 -z-1">
-    <div class="size-full rounded-full bg-radial from-gray-500 to-transparent blur-3xl"></div>
-</div>
 <h2 class="mt-32 text-5xl sm:text-7xl">How It Works</h2>
 
-<h2>Automation & Access</h2>
-<ImgTextCombo src={pincode_img} title="Secure PIN Codes" 
-text="For each booking, you will be provided a secure PIN code that you can use to check in 15 minutes before your alloted time." 
-rev=0 />
-<ImgTextCombo src={power_img} title="Automatic Power Down" 
-text="Once the booked session is over, all technological equipment will be automatically shut down." 
-rev=1 />
-<ImgTextCombo src={camera_img} title="Security Cameras" 
-text="Security cameras will be utilized to maintain security and logging entries for each booking member." 
-rev=0 />
+<!-- Step-by-Step Breakdown -->
+<div class="grid grid-cols-1 columns-lg justify-items-center mx-8 sm:mx-auto mt-16 sm:mt-24 sm:w-lg">
+    <Card class="en-card pb-8 sm:min-w-md">
+        <img src={card_membership} class="mx-auto mt-4 h-auto w-16 sm:w-24" alt="Card Icon" />
+        <p>Choose a membership that fits your playing needs</p>
+    </Card>
+    <ArrowDownOutline color="white" class="size-30" />
+    <Card class="en-card pb-8 sm:min-w-md">
+        <img src={card_booking} class="mx-auto mt-4 h-auto w-16 sm:w-24" alt="Card Icon" />
+        <p>Book your bay through Trackman</p>
+    </Card>
+    <ArrowDownOutline color="white" class="size-30" />
+    <Card class="en-card pb-8 sm:min-w-md">
+        <img src={card_password} class="mx-auto mt-4 h-auto w-16 sm:w-24" alt="Card Icon" />
+        <p>Receive a PIN to enter—no staff, no wait</p>
+    </Card>
+    <ArrowDownOutline color="white" class="size-30" />
+    <Card class="en-card pb-8 sm:min-w-md">
+        <img src={card_golfclub} class="mx-auto mt-4 h-auto w-16 sm:w-24" alt="Card Icon" />
+        <p>Play at your scheduled time—solo or with guests</p>
+    </Card>
+</div>

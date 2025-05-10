@@ -30,7 +30,7 @@
             </div>
         </div>
 
-        <img src={en_logo} class="hidden lg:block invisible col-span-2 mx-2 h-16" alt="" />
+        <img src={en_logo} class="hidden lg:block invisible col-span-2 mx-2 h-16" alt="Eagle's Nest" />
     </div>
 
     <small class="block font-light text-gray-400 text-xs sm:text-sm mb-4">Made with Flaticon icons</small>

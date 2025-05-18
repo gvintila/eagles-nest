@@ -6,6 +6,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
+  /* Flowbite Colors */
   --color-primary-50: #fff5f2;
   --color-primary-100: #fff1ee;
   --color-primary-200: #ffe4de;
@@ -16,6 +17,68 @@
   --color-primary-700: #eb4f27;
   --color-primary-800: #cc4522;
   --color-primary-900: #a5371b;
+
+  /* Custom Variables */
+
+  /* Colors */
+  --color-site-fill: #0d0d0d;                             /* Website background */
+  --color-nav-fill: #0c0c0c;                              /* Navbar + Footer background */
+  --color-nav-stroke: #2a2a2a;                            /* Navbar + Footer stroke */
+  --color-trackman-100: #ec691a;                          /* Default Trackman orange */
+  --color-trackman-200: oklch(0.57 0.1811 45.52);         /* Hovered Trackman orange (darker) */
+  --color-trackman-300: oklch(0.67 0.1811 45.52 / 30%);   /* Drop Shadow Trackman orange */
+  --color-trackman-400: oklch(0.77 0.1811 45.52);         /* Slightly ligher Trackman orange */
+  --color-white-1: #f3f3f3;
+  --color-white-2: #dcdcdc;
+
+  /* Fonts */
+  --font-primary: "Oswald Variable", sans-serif;
+  --font-secondary: "Roboto Variable", sans-serif;
+
+  /* Drop Shadows */
+  --drop-shadow-md: 0 0 12px rgb(0 0 0 / 0.05);
+}
+
+@layer base {
+  h1 {  /* Hero Header */
+    @apply font-primary text-pretty mx-[10vw] mt-32 text-center text-white-1 font-bold text-5xl sm:text-7xl
+  }
+  h2 {
+    @apply font-primary mx-auto mt-32 text-center text-white-1 text-5xl sm:text-7xl
+  }
+  h3 {  /* Card Header */
+    @apply font-primary mx-auto mt-4 text-center text-white-1 text-3xl sm:text-4xl
+  }
+  h6 {  /* FAQ Accordion Header */
+    @apply font-primary text-center text-white-1 text-lg sm:text-xl
+  }
+  p {
+    @apply font-secondary mx-auto mt-4 text-center text-white-2 text-sm sm:text-base
+  }
+  small {
+    @apply font-secondary mx-auto mt-4 text-center text-gray-300 text-sm sm:text-base
+  }
+}
+
+.subheader-gradient {
+  background: linear-gradient(180deg,rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 70%, rgb(30, 30, 30) 80%, rgba(0, 0, 0, 0) 100%);
+}
+
+.en-card {
+  @apply bg-site-fill rounded-4xl border-none drop-shadow-md drop-shadow-trackman-300
+}
+
+.svg-social {
+  @apply size-6 xl:size-8 mx-4 fill-white-2 hover:fill-trackman-100
+}
+
+/* Transitions */
+.animate-button {
+  @apply transition duration-150 hover:bg-trackman-200
+}
+
+.svelte-lightbox-thumbnail {
+  @apply transition duration-150 hover:scale-110
 }
 
 @source "../node_modules/flowbite-svelte/dist";
